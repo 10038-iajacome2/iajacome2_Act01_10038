@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Formulario de Login</title>
+    <meta name="viewport" content="width=device-width, user-scaleble=no,
+    initial-scale=1, maximum-scale=1,minimum-scale=1">
+    <link rel="stylesheet" href="Recursos/MisEstilos.css">
+    <script src="./JS/validarformcontacto.js"></script>
+</head>
+
+<body>
+    <form class="" action="" method="post" name="FormContacto" id="boton">
+        <div>
+            <h2>Contacto</h2>
+            <p>Correo Electronico</p>
+            <input type="text" name="txtEmail" id="txtEmail" placeholder="&#9993; usuario@mail.com" id="email"
+                onchange="validarCorreo()">
+        </div>
+
+        <div>
+            <p>Fecha de Nacimiento</p>
+            <input type="date" name="txtFecha">
+        </div>
+        <div>
+            <p>Teléfono</p>
+            <input type="text" name="txtTelefono" id="txtTelefono" placeholder="&#9742; Telefono" id="telefono" 
+                onchange="validarTelefono()">
+            <span id="txtTelefono-error" class="error-message"></span>
+        </div>
+
+        <input type="button" name="BtnEnviar" value="Enviar" onclick="validarboton()">
+
+        <br>
+        <a href="index.html">Regresar</a>
+    </form>
+</body>
+
+</html>
